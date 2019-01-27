@@ -1,0 +1,90 @@
+.js-hero-btn{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.js-hero-btn.unlocked:hover{
+    background-color: #5bc0de;
+}
+
+.btn-container{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-container{
+    padding: 75px;
+}
+
+.hero-panel{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-info{
+    font-size: 35px;
+}
+
+.mui--text-title{
+    text-align: center;
+}
+/* reset */
+
+.title-container{
+    margin: 0;
+}
+
+/* MUI reset */
+.mui-btn + .mui-btn {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.mui-btn{
+    margin: 0;
+    margin-right: 20px;
+}
+
+.blackandwhite {
+    filter: grayscale(100%);
+}
+
+.skin-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    justify-content: space-around;
+}
+
+.skin-container .mui-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.skin-container div img{
+    height: 140px;
+    width: 140px;
+}
+
+.hero-skin-disabled{
+    filter: grayscale(100%);
+}
+
+.hero-skin-enabled:hover, .hero-skin-disabled:hover{
+    background-color: #5bc0de;
+}
+
+.selected-hero, .selected-hero:active, .selected-hero:hover, .selected-hero:focus{
+    background-color: #40d1b1;
+}

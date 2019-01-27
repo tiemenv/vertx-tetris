@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bricking bad</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/modifiers.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/appbar.css">
+    <link rel="stylesheet" type="text/css" href="css/hero-select.css">
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+</head>
+
+<body>
+<header class="mui-appbar mui--z1">
+    <div class="mui-container">
+        <table>
+            <tr class="mui--appbar-height">
+                <td class="mui--text-title"><a href="index.html">Bricking Bad</a></td>
+            </tr>
+        </table>
+    </div>
+</header>
+<div id="content-wrapper" class="mui--text-center">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-row">
+        <div class="hero-portrait-container mui-col-md-6">
+            <div class="mui--text-display3 hero-container title-container">Select your hero</div>
+            <div class="btn-container">
+                <button class="mui-btn mui-btn--raised js-hero-btn unlocked" id="js-hero-heisenberg">
+                    <img src="images/heisenberg.png"
+                         height="140" width="140"
+                         alt="Heisenberg"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn unlocked" id="js-hero-jesse">
+                    <img src="images/jesse.png"
+                         height="140" width="140"
+                         alt="Jesse Pinkman"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-hector">
+                    <img src="images/hector.png"
+                         height="140" width="140"
+                         alt="Hector Salamanca"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-walter">
+                    <img src="images/walter.png"
+                         height="140" width="140"
+                         alt="Walter White"/>
+                </button>
+
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-marie">
+                    <img src="images/marie.png"
+                         height="140" width="140"
+                         alt="Marie Schrader"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-mike">
+                    <img src="images/mike.png"
+                         height="140" width="140"
+                         alt="Mike Ehrmantraut"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-saul">
+                    <img src="images/saul.png"
+                         height="140" width="140"
+                         alt="Saul Goodman"/></button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-skyler">
+                    <img src="images/skyler.png"
+                         height="140" width="140"
+                         alt="Skyler White"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-gustavo">
+                    <img src="images/gustavo.png"
+                         height="140" width="140"
+                         alt="Gustavo Fring"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-hank">
+                    <img src="images/hank.png"
+                         height="140" width="140"
+                         alt="Hank Schrader"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-junior">
+                    <img src="images/junior.png"
+                         height="140" width="140"
+                         alt="Walter White Jr."/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-todd">
+                    <img src="images/todd.png"
+                         height="140" width="140"
+                         alt="Todd Alquist"/></button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-cousins">
+                    <img src="images/cousins.png"
+                         height="140" width="140"
+                         alt="The Cousins"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-jane">
+                    <img src="images/jane.png"
+                         height="140" width="140"
+                         alt="Jane Margolis"/>
+                </button>
+                <button class="mui-btn mui-btn--raised js-hero-btn blackandwhite" id="js-hero-alexey">
+                    <img src="images/alexey.png"
+                         height="140" width="140"
+                         alt="Alexey Pajitnov"/>
+                </button>
+            </div>
+        </div>
+        <div class="hero-info-screen hero-container mui-col-md-6">
+            <div class="mui-panel hero-panel">
+                <div class="hero-info">Select your hero!</div>
+            </div>
+            <div class="confirm-btn-container">
+                <button class="mui-btn js-confirm-btn">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/globals.js"></script>
+<script src="js/eventbus.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/hero-select.js"></script>
+
+</body>
+
+</html>

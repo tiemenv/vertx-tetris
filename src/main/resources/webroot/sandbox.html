@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bricking Bad</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/spinner.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/modifiers.css">
+    <link rel="stylesheet" type="text/css" href="css/sandbox.css">
+    <link rel="stylesheet" type="text/css" href="css/appbar.css">
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+</head>
+
+<body>
+<header class="mui-appbar mui--z1">
+    <div class="mui-container">
+        <table>
+            <tr class="mui--appbar-height">
+                <td class="mui--text-title"><a href="index.html">Bricking Bad</a></td>
+                <td class="mui--text-right">
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+<div class="js-waiting-overlay">
+    <div id="overlay-text">
+        <h1>Created a lobby!</h1>
+        <p>Waiting for another player to join</p>
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+</div>
+<div id="content-wrapper" class="mui--text-center">
+    <div class="canvas-container">
+        <div class="aside-container" id="aside-container-p1">
+            <div class="js-preview" id="preview-player1"></div>
+            <div class="ability-container">
+                <div class="js-ability" id="ability1">
+                    <span class="pulse">Q</span>
+                </div>
+                <div class="js-ability" id="ability2">
+                    <span class="pulse">S</span>
+                </div>
+            </div>
+        </div>
+        <div class="canvas-item">
+            <h2 id="js-name-p1">&nbsp;</h2><br>
+            <span id="js-score-p1">Score: 0</span>
+
+            <canvas id="canvas-player1" class="canvas-bucket" width="100" height="200">
+
+            </canvas>
+            <button class="js-pause-btn" id="js-pause-p1">Press P to pause</button>
+        </div>
+
+        <div class="middle-section">
+            <div class="timer-container">
+                &nbsp;
+            </div>
+            <div class="portrait-container">
+                <div class="js-portrait" id="portrait-player1">
+
+                </div>
+                <div class="js-portrait" id="portrait-player2">
+
+                </div>
+            </div>
+        </div>
+        <div class="canvas-item">
+            <h2 id="js-name-p2">&nbsp;</h2><br>
+            <span id="js-score-p2">Score: 0</span>
+
+            <canvas id="canvas-player2" class="canvas-bucket" width="100" height="200">
+
+            </canvas>
+            <button class="js-pause-btn" id="js-pause-p2">Press P to pause</button>
+        </div>
+        <div class="aside-container" id="aside-container-p2">
+            <div class="js-preview" id="preview-player2"></div>
+            <div class="ability-container">
+                <div class="js-ability" id="ability3">
+                    <span class="pulse">Q</span>
+                </div>
+                <div class="js-ability" id="ability4">
+                    <span class="pulse">S</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/globals.js"></script>
+<script src="js/eventbus.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/tetris.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bricking bad</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/modifiers.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/appbar.css">
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+</head>
+
+<body>
+    <header class="mui-appbar mui--z1">
+        <div class="mui-container">
+            <table>
+                <tr class="mui--appbar-height">
+                    <td class="mui--text-title logo-font">Bricking Bad</td>
+                    <td class="mui--text-right">
+                        <ul class="mui-list--inline mui--text-body2">
+                            <li class="js-nav-item" id="js-nav-about"><a href="#" class="no-decoration">About</a></li>
+                            <li class="js-nav-item" id="js-nav-register"><a href="#" class="no-decoration">Register</a></li>
+                            <li class="js-nav-item" id="js-nav-login"><a href="#" class="no-decoration">Login</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+        <!-- shown at start -->
+        <div class="mui--appbar-height"></div>
+        <div class="mui--text-display3 title-container logo-font">Bricking Bad</div>
+
+        <div class="btn-container">
+            <button class="mui-btn mui-btn--raised js-btn-not-implemented" id="js-store-btn">Store</button>
+            <button class="mui-btn mui-btn--raised" id="js-play-btn">Battle</button>
+            <button class="mui-btn mui-btn--raised js-btn-not-implemented" id="js-other-playmodes-btn">Other Playmodes</button>
+            <button class="mui-btn mui-btn--raised js-btn-not-implemented" id="js-clans-btn">Clans</button>
+            <button class="mui-btn mui-btn--large mui-btn--accent mui-btn--raised js-btn-not-implemented" id="js-competitive-btn">Competitive</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

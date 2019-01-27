@@ -1,0 +1,48 @@
+
+
+.modal{
+    border-radius: 8px;
+    padding: 75px 100px 100px 100px;
+    width: 40vw; 
+    margin: 100px auto;
+    background-color: #fff;
+}
+
+.modal-header{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.btn-container{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container{
+    margin: 100px 0 50px 0;
+}
+
+.mui-btn{
+    width: 400px;
+    margin-bottom: 20px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.mui-btn--large {
+    height: 100px;
+    font-size: 20px;
+}
+
+
+
+/* MUI reset */
+.mui-btn + .mui-btn {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+

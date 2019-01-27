@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Rajdhani:400,700');
+
+.logo-font, header {
+    font-family: 'Major Mono Display', monospace;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
